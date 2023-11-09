@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_add_button_style">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginBottom">@dimen/_15dp</item>
+        <item name="android:layout_marginEnd">@dimen/_15dp</item>
+    </style>
+    <style name="shop_item_layout_style">
+        <item name="android:padding">@dimen/_5dp</item>
+        <item name="android:layout_margin">@dimen/_5dp</item>
+    </style>
+</resources>

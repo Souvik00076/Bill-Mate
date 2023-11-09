@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShopBilling</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_heading">Login</string>
+    <string name="email_hint">johndoe@gmail.com</string>
+    <string name="login_text">Login</string>
+    <string name="not_regostered_hint">Not yet registered?? SignUp Now!!</string>
+    <string name="password_hint">**********</string>
+    <string name="signup_heading">Sign Up</string>
+    <string name="signup_text">Sign Up</string>
+    <string name="name_hint">John Doe</string>
+    <string name="age_hint">29 years</string>
+    <string name="date_hint">01/10/2022</string>
+</resources>

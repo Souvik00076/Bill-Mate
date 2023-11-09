@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddUserFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12dp"
+        android:backgroundTint="@color/red"
+        app:cardCornerRadius="@dimen/_24dp"
+        app:cardElevation="@dimen/_12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="@dimen/_24dp"
+            app:cardCornerRadius="@dimen/_48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/image_id"
+            >
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@color/black"
+                />
+        </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:orientation="vertical"
+                android:padding="@dimen/_5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_id"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48dp"
+                    android:layout_margin="@dimen/_5dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/name_hint"
+                    android:padding="@dimen/_2dp"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48dp"
+                    android:layout_margin="@dimen/_5dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/age_hint"
+                    android:padding="@dimen/_2dp"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48dp"
+                    android:layout_margin="@dimen/_5dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/date_hint"
+                    android:padding="@dimen/_2dp"
+                    android:textColorHint="@color/black" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_item"
+        android:layout_width="@dimen/_60dp"
+        android:layout_height="@dimen/_60dp"
+        android:src="@drawable/person_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_24dp"
+        />
+</RelativeLayout>
