@@ -31,7 +31,7 @@ public class SignUp extends Fragment {
     public void init(View root) {
         emailEt = root.findViewById(R.id.email_et);
         passwordEt = root.findViewById(R.id.password_et);
-        confPassEt = root.findViewById(R.id.conf_password_et);
+       // confPassEt = root.findViewById(R.id.conf_password_et);
         signUpButton = root.findViewById(R.id.login_button);
     }
 }
